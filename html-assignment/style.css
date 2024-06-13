@@ -1,0 +1,35 @@
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 18px;
+}
+
+header, footer {
+    background-color: burlywood;
+}
+
+
+.site-title {
+    color:darkslategray
+}
+
+#my-image {
+    box-shadow: 0px 0px 2px 1px rgba(0, 0, 0, 0.1) ;
+}
+
+ul {
+    list-style-type: square;
+}
+
+ul li:nth-child(2n+1) {
+    background-color: sandybrown;
+}
+
+a {
+    text-decoration: none;
+    background-color: rgb(174, 201, 252);
+    border: 2px; color:blueviolet
+}
+
+a:hover {
+    background-color: cornflowerblue;
+}
