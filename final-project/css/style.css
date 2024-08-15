@@ -1,0 +1,461 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    overflow-x: hidden;
+    font-size: 16px;
+    color: #222;
+}
+
+.container {
+    width: 100%;
+    padding: 15px;
+}
+
+.site-header {
+    background-color: #222;
+    max-width: 100%;
+}
+
+.logo-container {
+    background-color: #c78c06;
+
+    img {
+        width: fit-content;
+    }
+}
+
+.nav-list {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.nav-link {
+    display: block;
+    color: #c78c06;
+    padding: 10px;
+    text-decoration: none;
+}
+
+.nav-link:hover {
+    color: #222;
+    background-color: #c78c06;
+}
+
+.search-form {
+    display: flex;
+}
+
+.search-input {
+    flex-grow: 1;
+}
+
+.search-button {
+    background-color: #222;
+    border: 1px solid #c78c06;
+    width: 30px;
+    height: 30px;
+    padding: 0;
+    cursor: pointer;
+}
+
+.search-button:hover {
+    background-color: black;
+}
+
+.home-section {
+    background-image: url(../images/main-banner.jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 40px 0 40px 0;
+    color: white;
+
+    .container {
+        background-color: rgba(34, 34, 34, 0.7);
+    }
+}
+
+.home-heading {
+    font-size: 45px;
+    font-weight: bold;
+    line-height: 1.5;
+    margin-bottom: 15px;
+}
+
+.home-description {
+    line-height: 1.5;
+    margin-bottom: 15px;
+}
+
+.connect-link {
+    display: flex;
+    background-color: #c78c06;
+    padding: 20px;
+    max-width: fit-content;
+    text-decoration: none;
+    gap: 15px;
+    line-height: 1.2;
+}
+
+.connect-link:hover {
+    background-color: #ffe6ac;
+}
+
+.about-us-section {
+    background-color: #ffe6ac;
+}
+
+.about-us-image {
+    margin-bottom: 15px;
+
+    img {
+        max-width: 100%;
+    }
+}
+
+.about-us-heading,
+.services-heading,
+.team-heading,
+.contact-heading {
+    font-size: 35px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.about-us-text {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    line-height: 1.5;
+}
+
+.service-item {
+    background-color: #ffe6ac;
+}
+
+.services-heading {
+    margin-top: 15px;
+}
+
+.service-image {
+    img {
+        width: 100%;
+    }
+}
+
+.services-list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.dark-button {
+    display: flex;
+    background-color: #222;
+    color: white;
+    padding: 20px;
+    max-width: fit-content;
+    text-decoration: none;
+    gap: 15px;
+    line-height: 1.2;
+}
+
+.dark-button:hover {
+    background-color: black;
+}
+
+.service-title {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.service-content {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 15px;
+}
+
+.vision-section {
+    background-image: url('../images/vision.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+}
+
+.vision-heading {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 15px 0;
+}
+
+.vision-description {
+    line-height: 1.5;
+    margin-bottom: 15px;
+}
+
+.team-member {
+    background-color: #ffe6ac;
+}
+
+.team-heading {
+    margin-top: 15px;
+}
+
+.team-member-content {
+    padding: 15px;
+}
+
+.team-member-name {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.team-member-bio {
+    line-height: 1.5;
+}
+
+.team-member-position {
+    border-bottom: 1px solid #c78c06;
+    padding-bottom: 5px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.team-member-list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.contact-heading {
+    margin-top: 15px;
+}
+
+.contact-form-heading,
+.hours-heading,
+.location-heading {
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-input {
+    height: 35px;
+}
+
+.form-input,
+.form-textarea {
+    margin-bottom: 15px;
+}
+
+.form-submit-button {
+    background-color: #222;
+    color: #c78c06;
+    padding: 10px 15px;
+    max-width: fit-content;
+    text-decoration: none;
+}
+
+.form-submit-button:hover {
+    background-color: black;
+    cursor: pointer;
+}
+
+.contact-content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.hours-table {
+    width: 100%;
+    border: 2px outset;
+    border-collapse: separate;
+
+    thead {
+        background-color: #ffe6ac;
+        color: #222;
+    }
+
+    td,
+    th {
+        padding: 10px;
+        border: 1px inset;
+    }
+}
+
+.site-footer {
+    background-color: #222;
+    color: #c78c06;
+    padding: 15px 0;
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+}
+
+.form-label {
+    margin-bottom: 10px;
+}
+
+/* desktop start */
+@media (min-width: 760px) {
+    .container {
+        margin: auto;
+        max-width: 1200px;
+    }
+
+    .site-header {
+        .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+    }
+
+    .nav-list {
+        flex-direction: row;
+        width: 100%;
+    }
+
+    .nav-link {
+        font-size: 20px;
+        padding: 20px 30px;
+    }
+
+    .search-input {
+        height: 50px;
+        width: 250px;
+    }
+
+    .search-button {
+        width: 50px;
+        height: 50px;
+    }
+
+    .home-heading {
+        font-size: 80px;
+    }
+
+    .connect-link {
+        padding: 30px;
+        font-size: 20px;
+    }
+
+    .about-us-section {
+        .container {
+            display: flex;
+            gap: 20px;
+        }
+    }
+
+    .about-us-image,
+    .about-us-content {
+        width: 50%;
+    }
+
+    .about-us-heading,
+    .services-heading,
+    .team-heading,
+    .contact-heading {
+        font-size: 55px;
+    }
+
+    .about-us-image {
+        margin-bottom: 0;
+    }
+
+    .services-list {
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    .service-item {
+        width: calc(33.3333% - 14px);
+    }
+
+    .service-title {
+        font-size: 35px;
+    }
+
+    .service-item:nth-child(1),
+    .service-item:nth-child(2) {
+        width: calc(50% - 10px);
+    }
+
+    .dark-button {
+        max-width: 100%;
+        display: flex;
+        justify-content: center;
+        padding: 30px;
+        font-size: 20px;
+    }
+
+    .vision-section {
+        .dark-button {
+            max-width: fit-content;
+        }
+    }
+
+    .vision-heading {
+        font-size: 35px;
+    }
+
+    .team-member-list {
+        gap: 0;
+    }
+
+    .team-member {
+        display: flex;
+    }
+
+    .team-member:nth-child(2) {
+        flex-direction: row-reverse;
+    }
+
+    .team-member-image,
+    .team-member-content {
+        width: 50%;
+    }
+
+    .contact-content {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .contact-form-section {
+        order: 1;
+        width: calc(50% - 10px);
+    }
+
+    .location-section {
+        order: 2;
+        width: calc(50% - 10px);
+    }
+
+    .hours-of-operation-section {
+        order: 3;
+        width: 100%;
+    }
+
+    .contact-form-heading,
+    .hours-heading,
+    .location-heading,
+    .team-member-name {
+        font-size: 35px;
+    }
+
+    .contact-heading {
+        margin-bottom: 50px;
+    }
+}
