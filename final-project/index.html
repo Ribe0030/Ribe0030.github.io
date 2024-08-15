@@ -2,35 +2,51 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300..800&display=swap" rel="stylesheet" />
+    <link href="./css/reset.css" rel="stylesheet" type="text/css" />
     <link href="./css/style.css" rel="stylesheet" type="text/css" />
     <title>Final Project Ribe0030</title>
 </head>
 
 <body>
     <header class="site-header">
-        <img src="./images/logo.png" alt="Three Star Media" class="logo" />
+        <div class="container">
+            <div class="logo-container">
+                <img src="./images/logo.png" alt="Three Star Media" class="logo" />
+            </div>
 
-        <nav class="main-navigation">
-            <ul class="nav-list">
-                <li class="nav-item">
-                    <a href="/#home" class="nav-link">Home</a>
-                    <a href="/#about-us" class="nav-link">About Us</a>
-                    <a href="/#services" class="nav-link">Services</a>
-                    <a href="/#team" class="nav-link">Team</a>
-                    <a href="/#contact" class="nav-link">Contact</a>
-                </li>
-            </ul>
-        </nav>
+            <nav class="main-navigation">
+                <ul class="nav-list">
+                    <li class="nav-item">
+                        <a href="/#home" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="/#about-us" class="nav-link">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="/#services" class="nav-link">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="/#team" class="nav-link">Team</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="/#contact" class="nav-link">Contact</a>
+                    </li>
+                </ul>
+            </nav>
 
-        <!-- creating search bar with icon -->
-        <form class="search-form">
-            <input type="search" class="search-input" placeholder="Search">
-            <button type="submit" aria-label="Search" class="search-button">
-                <img src="./images/icons/search-icon.svg" width="20" height="20" alt="Search button">
-            </button>
-        </form>
+            <!-- creating search bar with icon -->
+            <form class="search-form">
+                <input type="search" class="search-input" placeholder="Search" />
+                <button type="submit" aria-label="Search" class="search-button">
+                    <img src="./images/icons/search-icon.svg" width="20" height="20" alt="Search button" />
+                </button>
+            </form>
+        </div>
     </header>
 
     <!-- hero section -->
@@ -41,13 +57,15 @@
 
                 <p class="home-description">
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque inventore soluta velit
-                    voluptatum dolore. Sequi alias deleniti voluptas mollitia, dignissimos error nostrum! Odio assumenda
-                    repellendus quam vel dignissimos esse dolorum.
+                    voluptatum
+                    dolore. Sequi alias deleniti voluptas mollitia, dignissimos error nostrum! Odio assumenda
+                    repellendus quam
+                    vel dignissimos esse dolorum.
                 </p>
 
                 <a href="/#contact" class="connect-link">
                     Connect with us
-                    <img src="./images/icons/arrow-icon.svg" width="20" height="20" alt="" class="arrow-icon">
+                    <img src="./images/icons/arrow-icon.svg" width="20" height="20" alt="" class="arrow-icon" />
                 </a>
             </div>
         </section>
@@ -56,22 +74,30 @@
         <section class="about-us-section">
             <div class="container">
                 <div class="about-us-image">
-                    <img src="./images/about-us.jpg" alt="Room with table tennis table">
+                    <img src="./images/about-us.jpg" alt="Room with table tennis table" />
                 </div>
 
-                <h2 class="about-us-heading">About Us</h2>
+                <div class="about-us-content">
+                    <h2 class="about-us-heading">About Us</h2>
 
-                <p class="about-us-text">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia illo ab amet dolorem ducimus, dicta
-                    minima, repudiandae adipisci unde, molestiae omnis! Quis fugiat dignissimos ut hic similique. Earum,
-                    quibusdam magnam.
-                </p>
+                    <div class="about-us-text">
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia illo ab amet dolorem ducimus,
+                            dicta
+                            minima, repudiandae adipisci unde, molestiae omnis! Quis fugiat dignissimos ut hic
+                            similique. Earum,
+                            quibusdam magnam.
+                        </p>
 
-                <p class="about-us-text">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel adipisci quasi voluptates beatae
-                    perspiciatis voluptas optio quis et odit rem facilis excepturi illum minus consequatur aut
-                    repudiandae, porro accusantium? Ullam?
-                </p>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel adipisci quasi voluptates
+                            beatae
+                            perspiciatis voluptas optio quis et odit rem facilis excepturi illum minus consequatur aut
+                            repudiandae,
+                            porro accusantium? Ullam?
+                        </p>
+                    </div>
+                </div>
             </div>
         </section>
 
@@ -80,100 +106,127 @@
             <div class="container">
                 <h2 class="services-heading">Our Services</h2>
 
-                <article class="service-item">
-                    <div class="service-image">
-                        <img src="./images/digital.jpg" alt="Man using mobile and laptop">
-                    </div>
+                <div class="services-list">
+                    <article class="service-item">
+                        <div class="service-image">
+                            <img src="./images/digital.jpg" alt="Man using mobile and laptop" />
+                        </div>
 
-                    <h3 class="service-title">Digital Transformation</h3>
+                        <div class="service-content">
+                            <h3 class="service-title">Digital Transformation</h3>
 
-                    <p class="service-description">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum culpa suscipit in deleniti iste,
-                        possimus odit, cum doloribus illum labore quisquam amet obcaecati facere doloremque modi
-                        accusamus voluptatem odio aliquid!
-                    </p>
+                            <p class="service-description">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum culpa suscipit in
+                                deleniti iste,
+                                possimus odit, cum doloribus illum labore quisquam amet obcaecati facere doloremque modi
+                                accusamus
+                                voluptatem odio aliquid!
+                            </p>
 
-                    <a href="/digital-plans" class="service-link">
-                        Digital Plans
-                        <img src="./images/icons/arrow-icon-white.svg" width="20" height="20" alt="" class="arrow-icon">
-                    </a>
-                </article>
+                            <a href="/digital-plans" class="dark-button">
+                                Digital Plans
+                                <img src="./images/icons/arrow-icon-white.svg" width="20" height="20" alt=""
+                                    class="arrow-icon" />
+                            </a>
+                        </div>
+                    </article>
 
-                <article class="service-item">
-                    <div class="service-image">
-                        <img src="./images/marketing.jpg" alt="Laptop on a table">
-                    </div>
+                    <article class="service-item">
+                        <div class="service-image">
+                            <img src="./images/marketing.jpg" alt="Laptop on a table" />
+                        </div>
 
-                    <h3 class="service-title">Marketing</h3>
+                        <div class="service-content">
+                            <h3 class="service-title">Marketing</h3>
 
-                    <p class="service-description">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum culpa suscipit in deleniti iste,
-                        possimus odit, cum doloribus illum labore quisquam amet obcaecati facere doloremque modi
-                        accusamus voluptatem odio aliquid!
-                    </p>
+                            <p class="service-description">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum culpa suscipit in
+                                deleniti iste,
+                                possimus odit, cum doloribus illum labore quisquam amet obcaecati facere doloremque modi
+                                accusamus
+                                voluptatem odio aliquid!
+                            </p>
 
-                    <a href="/marketing" class="service-link">
-                        Marketing Plans
-                        <img src="./images/icons/arrow-icon-white.svg" width="20" height="20" alt="" class="arrow-icon">
-                    </a>
-                </article>
+                            <a href="/marketing" class="dark-button">
+                                Marketing Plans
+                                <img src="./images/icons/arrow-icon-white.svg" width="20" height="20" alt=""
+                                    class="arrow-icon" />
+                            </a>
+                        </div>
+                    </article>
 
-                <article class="service-item">
-                    <div class="service-image">
-                        <img src="./images/video.jpg" alt="Person watching Youtube on a mobile">
-                    </div>
+                    <article class="service-item">
+                        <div class="service-image">
+                            <img src="./images/video.jpg" alt="Person watching Youtube on a mobile" />
+                        </div>
 
-                    <h3 class="service-title">Video Production</h3>
+                        <div class="service-content">
+                            <h3 class="service-title">Video Production</h3>
 
-                    <p class="service-description">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum culpa suscipit in deleniti iste,
-                        possimus odit, cum doloribus illum labore quisquam amet obcaecati facere doloremque modi
-                        accusamus voluptatem odio aliquid!
-                    </p>
+                            <p class="service-description">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum culpa suscipit in
+                                deleniti iste,
+                                possimus odit, cum doloribus illum labore quisquam amet obcaecati facere doloremque modi
+                                accusamus
+                                voluptatem odio aliquid!
+                            </p>
 
-                    <a href="/video-production" class="service-link">
-                        Video Production
-                        <img src="./images/icons/arrow-icon-white.svg" width="20" height="20" alt="" class="arrow-icon">
-                    </a>
-                </article>
+                            <a href="/video-production" class="dark-button">
+                                Video Production
+                                <img src="./images/icons/arrow-icon-white.svg" width="20" height="20" alt=""
+                                    class="arrow-icon" />
+                            </a>
+                        </div>
+                    </article>
 
-                <article class="service-item">
-                    <div class="service-image">
-                        <img src="./images/web.jpg" alt="Notepad with a mobile and a pen on it">
-                    </div>
+                    <article class="service-item">
+                        <div class="service-image">
+                            <img src="./images/web.jpg" alt="Notepad with a mobile and a pen on it" />
+                        </div>
 
-                    <h3 class="service-title">Web Development</h3>
+                        <div class="service-content">
+                            <h3 class="service-title">Web Development</h3>
 
-                    <p class="service-description">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum culpa suscipit in deleniti iste,
-                        possimus odit, cum doloribus illum labore quisquam amet obcaecati facere doloremque modi
-                        accusamus voluptatem odio aliquid!
-                    </p>
+                            <p class="service-description">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum culpa suscipit in
+                                deleniti iste,
+                                possimus odit, cum doloribus illum labore quisquam amet obcaecati facere doloremque modi
+                                accusamus
+                                voluptatem odio aliquid!
+                            </p>
 
-                    <a href="/web-development" class="service-link">
-                        Web Plans
-                        <img src="./images/icons/arrow-icon-white.svg" width="20" height="20" alt="" class="arrow-icon">
-                    </a>
-                </article>
+                            <a href="/web-development" class="dark-button">
+                                Web Plans
+                                <img src="./images/icons/arrow-icon-white.svg" width="20" height="20" alt=""
+                                    class="arrow-icon" />
+                            </a>
+                        </div>
+                    </article>
 
-                <article class="service-item">
-                    <div class="service-image">
-                        <img src="./images/print.jpg" alt="Newspaper stands in the street">
-                    </div>
+                    <article class="service-item">
+                        <div class="service-image">
+                            <img src="./images/print.jpg" alt="Newspaper stands in the street" />
+                        </div>
 
-                    <h3 class="service-title">Print</h3>
+                        <div class="service-content">
+                            <h3 class="service-title">Print</h3>
 
-                    <p class="service-description">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum culpa suscipit in deleniti iste,
-                        possimus odit, cum doloribus illum labore quisquam amet obcaecati facere doloremque modi
-                        accusamus voluptatem odio aliquid!
-                    </p>
+                            <p class="service-description">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum culpa suscipit in
+                                deleniti iste,
+                                possimus odit, cum doloribus illum labore quisquam amet obcaecati facere doloremque modi
+                                accusamus
+                                voluptatem odio aliquid!
+                            </p>
 
-                    <a href="/print" class="service-link">
-                        Print Plans
-                        <img src="./images/icons/arrow-icon-white.svg" width="20" height="20" alt="" class="arrow-icon">
-                    </a>
-                </article>
+                            <a href="/print" class="dark-button">
+                                Print Plans
+                                <img src="./images/icons/arrow-icon-white.svg" width="20" height="20" alt=""
+                                    class="arrow-icon" />
+                            </a>
+                        </div>
+                    </article>
+                </div>
             </div>
         </section>
 
@@ -184,13 +237,15 @@
 
                 <p class="vision-description">
                     Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ducimus quibusdam, animi tenetur
-                    recusandae tempora assumenda quasi maiores blanditiis ipsam non alias dolorem voluptas repellendus
-                    nostrum numquam officiis sit vero aliquid.
+                    recusandae
+                    tempora assumenda quasi maiores blanditiis ipsam non alias dolorem voluptas repellendus nostrum
+                    numquam
+                    officiis sit vero aliquid.
                 </p>
 
-                <a href="/our-vision" class="vision-link">
+                <a href="/our-vision" class="dark-button">
                     Learn More
-                    <img src="./images/icons/arrow-icon-white.svg" width="20" height="20" alt="" class="arrow-icon">
+                    <img src="./images/icons/arrow-icon-white.svg" width="20" height="20" alt="" class="arrow-icon" />
                 </a>
             </div>
         </section>
@@ -200,37 +255,48 @@
             <div class="container">
                 <h2 class="team-heading">Our Team</h2>
 
-                <article class="team-member">
-                    <div class="team-member-image">
-                        <img src="./images/john.jpg" alt="John Doe's picture making a funny face"
-                            class="team-member-photo">
-                    </div>
+                <div class="team-member-list">
+                    <article class="team-member">
+                        <div class="team-member-image">
+                            <img src="./images/john.jpg" alt="John Doe's picture making a funny face"
+                                class="team-member-photo" />
+                        </div>
 
-                    <h3 class="team-member-name">John Doe</h3>
-                    <p class="team-member-position">CEO and Co-owner</p>
+                        <div class="team-member-content">
+                            <h3 class="team-member-name">John Doe</h3>
 
-                    <p class="team-member-bio">
-                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Earum esse dolores sint alias
-                        reiciendis soluta eos porro, officia tempora, cupiditate assumenda magni! Labore tempora
-                        similique repellendus commodi magnam facere ipsum?
-                    </p>
-                </article>
+                            <p class="team-member-position">CEO and Co-owner</p>
 
-                <article class="team-member">
-                    <div class="team-member-image">
-                        <img src="./images/bob.jpg" alt="Bob Rite's picture with a serious face"
-                            class="team-member-photo" />
-                    </div>
+                            <p class="team-member-bio">
+                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Earum esse dolores sint alias
+                                reiciendis
+                                soluta eos porro, officia tempora, cupiditate assumenda magni! Labore tempora similique
+                                repellendus
+                                commodi magnam facere ipsum?
+                            </p>
+                        </div>
+                    </article>
 
-                    <h3 class="team-member-name">Bob Rite</h3>
-                    <p class="team-member-position">CEO and Co-owner</p>
+                    <article class="team-member">
+                        <div class="team-member-image">
+                            <img src="./images/bob.jpg" alt="Bob Rite's picture with a serious face"
+                                class="team-member-photo" />
+                        </div>
 
-                    <p class="team-member-bio">
-                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Earum esse dolores sint alias
-                        reiciendis soluta eos porro, officia tempora, cupiditate assumenda magni! Labore tempora
-                        similique repellendus commodi magnam facere ipsum?
-                    </p>
-                </article>
+                        <div class="team-member-content">
+                            <h3 class="team-member-name">Bob Rite</h3>
+                            <p class="team-member-position">CEO and Co-owner</p>
+
+                            <p class="team-member-bio">
+                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Earum esse dolores sint alias
+                                reiciendis
+                                soluta eos porro, officia tempora, cupiditate assumenda magni! Labore tempora similique
+                                repellendus
+                                commodi magnam facere ipsum?
+                            </p>
+                        </div>
+                    </article>
+                </div>
             </div>
         </section>
 
@@ -239,61 +305,63 @@
             <div class="container">
                 <h2 class="contact-heading">Contact Us</h2>
 
-                <section class="contact-form-section">
-                    <h3 class="contact-form-heading">Send us a message</h3>
+                <div class="contact-content">
+                    <section class="contact-form-section">
+                        <h3 class="contact-form-heading">Send us a message</h3>
 
-                    <!-- first input - full name (is required) -->
-                    <form class="contact-form">
-                        <label for="full-name" class="form-label">Full Name</label>
-                        <input type="text" id="full-name" name="full-name" required class="form-input" />
+                        <form class="contact-form">
+                            <!-- first input - full name (is required) -->
+                            <label for="full-name" class="form-label">Full Name</label>
+                            <input type="text" id="full-name" name="full-name" required class="form-input" />
 
-                        <!-- second input - email (required) -->
-                        <label for="email" class="form-label">Email</label>
-                        <input type="email" id="email" name="email" required class="form-input" />
+                            <!-- second input - email (required) -->
+                            <label for="email" class="form-label">Email</label>
+                            <input type="email" id="email" name="email" required class="form-input" />
 
-                        <!-- third input - message (optional) -->
-                        <label for="message" class="form-label">Message</label>
-                        <textarea id="message" name="message" rows="5" class="form-textarea"></textarea>
+                            <!-- third input - message (optional) -->
+                            <label for="message" class="form-label">Message</label>
+                            <textarea id="message" name="message" rows="5" class="form-textarea"></textarea>
 
-                        <!-- CTA to subimit the form -->
-                        <button type="submit" class="form-submit-button">Send</button>
-                    </form>
-                </section>
+                            <!-- CTA to subimit the form -->
+                            <button type="submit" class="form-submit-button">Send</button>
+                        </form>
+                    </section>
 
-                <section class="location-section">
-                    <h3 class="location-heading">Location</h3>
+                    <!-- table with info about hours -->
+                    <section class="hours-of-operation-section">
+                        <h3 class="hours-heading">Hours of Operation</h3>
 
-                    <!-- adding the google map -->
-                    <iframe
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2803.8598631509335!2d-75.75753612372448!3d45.35164104094181!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cce071fb12b1585%3A0xb3f9350de69accd2!2sPhysical%20Resources%2C%201385%20Woodroffe%20Ave%2C%20Nepean%2C%20ON%20K2G%201V8!5e0!3m2!1sen!2sca!4v1722476426706!5m2!1sen!2sca"
-                        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-                        referrerpolicy="no-referrer-when-downgrade" class="map-iframe">
-                    </iframe>
-                </section>
+                        <table class="hours-table">
+                            <thead>
+                                <tr>
+                                    <th>Days</th>
+                                    <th>Hours</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Monday - Friday</td>
+                                    <td>9 AM - 6 PM</td>
+                                </tr>
+                                <tr>
+                                    <td>Saturday - Sunday</td>
+                                    <td>Closed</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </section>
 
-                <!-- table with info about hours -->
-                <section class="hours-of-operation-section">
-                    <h3 class="hours-heading">Hours of Operation</h3>
+                    <section class="location-section">
+                        <h3 class="location-heading">Location</h3>
 
-                    <table class="hours-table">
-                        <thead>
-                            <tr>
-                                <th>Days</th>
-                                <th>Hours</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>Monday - Friday</td>
-                                <td>9 AM - 6 PM</td>
-                            </tr>
-                            <tr>
-                                <td>Saturday - Sunday</td>
-                                <td>Closed</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </section>
+                        <!-- adding the google map -->
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2803.8598631509335!2d-75.75753612372448!3d45.35164104094181!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cce071fb12b1585%3A0xb3f9350de69accd2!2sPhysical%20Resources%2C%201385%20Woodroffe%20Ave%2C%20Nepean%2C%20ON%20K2G%201V8!5e0!3m2!1sen!2sca!4v1722476426706!5m2!1sen!2sca"
+                            width="100%" height="450" style="border: 0" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade" class="map-iframe" title="Map">
+                        </iframe>
+                    </section>
+                </div>
             </div>
         </section>
     </main>
@@ -306,6 +374,5 @@
         </div>
     </footer>
 </body>
-
 
 </html>
